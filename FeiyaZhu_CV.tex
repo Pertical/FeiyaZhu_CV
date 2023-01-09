@@ -1,0 +1,162 @@
+%-------------------------
+% Resume in Latex
+% Author : Feiya Zhu
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Feiya Zhu}} & Email : \href{mailto:feiyaz@andrew.cmu.edu}{feiyaz@andrew.cmu.edu}\\
+  \href{https://www.linkedin.com/in/feiya-zhu/}{Linkedin: linkedin.com/in/feiya-zhu} & Mobile : +1-412-588-3637 \\
+  \href{https://github.com/Pertical}{Github: github.com/Pertical} \\
+\end{tabular*}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA, US}
+      {M.S. in Mechanical Engineering;  GPA: 4.0/4.0}{2024}
+      
+      {\textit{Courses: Computer Vision, Machine Learning \& Artificial Intelligence, Engineering Computation}}
+	    
+    \resumeSubheading
+      {Kettering University}{Flint, MI, US}
+      {Bachelor of Science in Mechanical Engineering;  GPA: 3.51/4.0 }{2019}
+
+      {\textit{Thesis: Thermal Management Study on Climate Control Seating Design(Advisor: Dr. Susanta Das, Sponsor: Gentherm)}}
+      
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+
+            \resumeSubItem{Mechanical Engineering}{Product Design \& Structure Analysis, FEA, Thermodynamics \& Fluids}
+            \resumeSubItem{Software Engineering}{Robotic Control, Computer Vision, Machine Learning \& Artificial Intelligence, Data Analysis}
+    	\resumeSubItem{Engineering Tools}{AutoCAD, Solidworks, ANSYS, MATLAB, XCode, Visual Studio Code}
+    	\resumeSubItem{Languages}{Python, C++}
+     
+        \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Biaode Engineering}{Guangzhou, China}
+    {Project Manager}{Dec 2020 - May 2022}
+    \resumeItemListStart
+        \item
+          {Served as project manager for three main projects: Instrumental construction and training project at the Qingyuan Senior Technical Institute (2M CNY). The recreational construction project at the Qingyuan Correctional Facility (3M CNY), Information technical construction project at Lianshan Technical School (320K CNY).}
+          \item Was Responsible for the coordination with suppliers and clients to ensure the completion of projects by meeting objectives and timelines.
+      \resumeItemListEnd
+      
+    \resumeSubheading
+		{Bucalu Fenestration Systems}{Guangzhou, China}
+		{Product Development Engineer}{Oct 2019 - Nov 2020}
+		\resumeItemListStart
+        \item Was responsible for the design and development of new fenestration systems (Outward Opening Windows).
+        \item Performed structure analysis (FEA), thermal analysis and hardware adaptability for product verification, validation and manufacturability. 
+        \item Participated in cross-departmental collaboration to ensure the success of  manufacturing new products and the improvements on current products.
+		\resumeItemListEnd
+
+    \resumeSubheading
+    {Gentherm}{Novi, MI, US}
+    {Product Development R\&D Co-Op}{July 2016 - Sep 2018}
+    \resumeItemListStart
+    \item Assisted in the design and development team for the development of the Gentherm Climate Control Seat system. 
+    \item Participated in developing prototypes for major vehicle companies (Ford, General Motors, BMW, etc.).
+    \item Completed my undergraduate thesis that evaluates new possible design procedures for Gentherm CCS system. 
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Plug board Proxy (Networking)}{Developed a plug board proxy that adds an extra layer of encryption to connections towards TCP services. Clients running on same server connect to pbproxy, which then relays all traffic to actual services. (Mar '16)}
+\resumeSubItem{Asynchronous Work Queue Manager (Kernel Programming)}{Developed a kernel module to serve as an asynchronous work queue manager with configurable worker threads. Implemented netlink sockets to propagate callbacks from kernel to user land and throttling to improve job extraction latency. (Nov '15)}
+\resumeSubItem{Anti-Malware Stackable File System (Kernel Programming)}{Implemented a stackable, anti-malware Linux file system that prevents the existing file system from being corrupted by malware by detecting virus pattern while attempting to open, read and write a file. (Oct '15)}
+
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{Honors and Awards}
+
+%-------------------------------------------
+\end{document}
