@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Feiya Zhu
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Feiya Zhu}} & Email : \href{mailto:feiyaz@andrew.cmu.edu}{feiyaz@andrew.cmu.edu}\\
+  \href{https://www.linkedin.com/in/feiya-zhu/}{Linkedin: linkedin.com/in/feiya-zhu} & Mobile : +1-412-588-3637 \\
+  \href{https://github.com/Pertical}{Github: github.com/Pertical} \\
+\end{tabular*}
+
+
+%-----------SUMMARY-----------------
+% \section{Summary}
+%   \resumeSubHeadingListStart
+%   Mechanical engineering student with a strong interest in computer vision and robotics, seeking an internship opportunity. Proficient in CAD software, as well as programming languages such as Python and MATLAB. Strong problem-solving skills and ability to work well in a team.
+
+
+%      \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA, US}
+      {M.S. in Mechanical Engineering - Research, Robotics and AI;  GPA: 4.0/4.0}{2024}
+      
+      {\textit{Courses: Computer Vision, Machine Learning \& Artificial Intelligence, Engineering Computation}}
+	    
+    \resumeSubheading
+      {Kettering University}{Flint, MI, US}
+      {Bachelor of Science in Mechanical Engineering - Automotive;  GPA: 3.51/4.0; Dean's List }{2019}
+
+      {\textit{Thesis: Thermal Management Study on Climate Control Seating Design(Advisor: Dr. Susanta Das, Sponsor: Gentherm)}}
+      
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+    \resumeSubHeadingListStart
+
+            \resumeSubItem{Mechanical Engineering}{Product Design \& Structure Analysis, FEA, Thermodynamics \& Fluids}
+            \resumeSubItem{Software Engineering}{Robotic Control, Computer Vision, Machine Learning \& Artificial Intelligence, Data Analysis}
+    	\resumeSubItem{Engineering Tools}{AutoCAD, SOLIDWORKS, Ansys, COMSOL, MATLAB, XCode, Visual Studio Code}
+    	\resumeSubItem{Languages}{Python, C++}
+     
+      \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Biaode Engineering}{Guangzhou, China}
+    {Project Manager}{Dec 2020 - May 2022}
+    \resumeItemListStart
+        \item
+          {Served as project manager for three main projects: instrumental construction and training project at the Qingyuan Senior Technical Institute (2 million CNY), the recreational construction project at the Qingyuan Correctional Facility (3 million CNY), and the information technology construction project at Lianshan Technical School (320 thousand CNY).}
+          \item Managed all aspects of construction projects from start to finish, including budgeting, scheduling, and safety management.
+          \item Coordinated with clients, architects, and subcontractors to ensure the successful completion of projects.
+          \item Conducted regular site visits to monitor progress and ensure quality control. 
+
+      \resumeItemListEnd
+      
+    \resumeSubheading
+		{Bucalu Fenestration Systems}{Guangzhou, China}
+		{Product Development Engineer}{Oct 2019 - Nov 2020}
+		\resumeItemListStart
+        \item Designed, developed, and tested new fenestration products, including a parallel outward-opening window system.
+        \item Performed structure analysis (FEA), thermal analysis, and hardware adaptability to verify and validate the design of a product, and ensure its manufacturability. 
+        \item Participated in cross-departmental collaboration to ensure the success of manufacturing new products and the improvement of current products.
+		\resumeItemListEnd
+
+    \resumeSubheading
+    {Gentherm}{Novi, MI, US}
+    {Product Development R\&D Co-Op}{July 2016 - Sep 2018}
+    \resumeItemListStart
+    \item Assisted in the design, development, and testing for the development of the Gentherm Climate Control Seat system. 
+    \item Participated in developing prototypes for major vehicle companies such as Ford, General Motors, and BMW.
+    \item Led research on evaluating current seating design approaches and concluded the best approach for the Gentherm Climate Control Seat (CCS) system. This research formed the basis for my undergraduate thesis.
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Robotic Control using Image Segmentation}{Developing a real-time vision system that segments an image of a liquid in a container, and identifies the level of the liquid, which warns the robotic arm of potential spills or leaks while moving the container. (Ongoing Project with Prof. Farimani)}
+\resumeSubItem{Manic Shooter Game}{Led the team in developing a manic shooter game. Managed the team and oversee the different aspects of its development from design, programming, animation, and sound effects. (Dec '22, Final Project for Class 24-780)}
+\resumeSubItem{Shallow Facial Emotion Classifier}{Developed a shallow neural network for facial expression emotion recognition and classification. The model was trained on the mini version of Affectnet and achieved around 70\% accuracy in predicting human emotions. 
+(Dec '22, Final Project for Class 24-787)}
+\resumeSubItem{Solid Oxide Fuel Cell}{Assisted in testing a symmetrical solid oxide fuel cell (SOFC) with commercial LSCF cathodes and electrolytes under different conditions.(Sep '19)}
+
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{Publication}
+\resumeSubHeadingListStart
+
+\item  Gianfranco DiGiuseppe, Allen Hunter, \textbf{Feiya Zhu}, “Combined equivalent circuits and distribution of relaxation times analysis and interfacial effects of (La0.60Sr0.40)0.95Co0.20Fe0.80O3-x Cathodes,” Electrochimica Acta, Vol. 350, doi.org/10.1016/j.electacta.2020.136252, 2020.
+
+      \resumeSubHeadingListEnd
+
+\centering *References Available Upon Request*
+
+%-------------------------------------------
+\end{document}
